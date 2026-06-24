@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- start layout activity_principal_menu -->
+    <string name="first_comment"></string>
+    <string name="hymnaire">Hymnaire</string>
+    <!-- end layout activity_principal_menu -->
+</resources>
