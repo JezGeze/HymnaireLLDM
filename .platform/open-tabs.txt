@@ -1,2 +1,9 @@
-0
+7
+/storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/kotlin/com/jezdevcode/hymnairelldm/PrincipalMenu/HymnaireList/HymnaireListActivity.kt
+/storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/kotlin/com/jezdevcode/hymnairelldm/PrincipalMenu/PrincipalMenuActivity.kt
 /storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/res/layout/activity_principal_menu.xml
+/storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/res/values/dimens.xml
+/storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/res/values/colors.xml
+/storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/res/values/strings.xml
+/storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/res/drawable/ic_index_24px.xml
+/storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/res/drawable/ic_hymnaire_24px.xml
