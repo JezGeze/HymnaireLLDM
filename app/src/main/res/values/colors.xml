@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    
+    <!-- start AppTheme -->
+    <color name="primary">#FF6200EE</color>
+    <color name="on_primary">#FFFFFFFF</color>
+    <color name="ic_launcher_background">#3DDC84</color>
+    <!-- end AppTheme -->
+    
     <!-- start layout activity_principal_menu -->
-    <dimen name="general_margin">12dp</dimen>
+    <color name="background_principal_menu">#FFFFFF</color> <!-- white color -->
+    <color name="text_color_principal_menu">#000000</color> <!-- black color -->
     <!-- end layout activity_principal_menu -->
     
 </resources>
