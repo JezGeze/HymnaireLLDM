@@ -4,5 +4,6 @@
     <!-- start layout activity_principal_menu -->
     <string name="first_comment">Hymnaire La Lumire Du Monde</string>
     <string name="hymnaire">Hymnaire</string>
+    <string name="sommaire">Sommaire</string>
     <!-- end layout activity_principal_menu -->
 </resources>
