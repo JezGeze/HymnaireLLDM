@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- start layout activity_principal_menu -->
+    <dimen name="general_margin">12dp</dimen>
+    <!-- end layout activity_principal_menu -->
+</resources>
