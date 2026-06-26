@@ -1,5 +1,4 @@
-2
-/storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/res/layout/activity_principal_menu.xml
+0
 /storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/kotlin/com/jezdevcode/PrincipalMenuActivity.kt
 /storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/kotlin/com/jezdevcode/hymnairelldm/HymnaireListActivity.kt
 /storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/AndroidManifest.xml
