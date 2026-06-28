@@ -1,5 +1,5 @@
-2
-/storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/kotlin/com/jezdevcode/PrincipalMenuActivity.kt
+0
 /storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/kotlin/com/jezdevcode/hymnairelldm/HymnaireListActivity.kt
-/storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/res/layout/activity_principal_menu.xml
-/storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/res/values/strings.xml
+/storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/kotlin/com/jezdevcode/hymnairelldm/HymnaireListPresenter.kt
+/storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/kotlin/com/jezdevcode/hymnairelldm/Cantos.kt
+/storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/kotlin/com/jezdevcode/hymnairelldm/HymnaireListContract.kt
