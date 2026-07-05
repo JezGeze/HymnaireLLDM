@@ -6,7 +6,9 @@ import kotlinx.coroutines.flow.Flow
 import androidx.room.Dao
 import androidx.room.Query
 
+//Paso 2
 //Aquí es donde se ponen las instrucciones que va a hacer nuestra base de datos
+// Paso 3: AppDatabase
 @Dao
 interface HymnDao {
     
