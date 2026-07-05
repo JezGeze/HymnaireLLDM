@@ -11,9 +11,9 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "hymns")
 data class Hymn(
     
-    @PrimaryKey(autoGenerate = true)
-    val id: Int = 0,
+    @PrimaryKey
     val hymnNumber: Int,
+    
     val hymnFrenchTitle: String,
     val hymnSpanishTitle: String,
     val hymnTematic: String,
