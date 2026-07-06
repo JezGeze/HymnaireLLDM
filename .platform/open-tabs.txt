@@ -1,4 +1,4 @@
-3
+0
 /storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/kotlin/com/jezdevcode/hymnairelldm/HymnaireListActivity.kt
 /storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/kotlin/com/jezdevcode/hymnairelldm/HymnaireListPresenter.kt
 /storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/kotlin/com/jezdevcode/hymnairelldm/Cantos.kt
@@ -7,4 +7,4 @@
 /storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/kotlin/com/jezdevcode/hymnairelldm/database/AppDatabase.kt
 /storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/kotlin/com/jezdevcode/hymnairelldm/database/DatabaseProvider.kt
 /storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/kotlin/com/jezdevcode/hymnairelldm/database/HymnRepository.kt
-/storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/assets/hymns.json
+/storage/emulated/0/Android/data/com.tyron.code/files/codeassist/projects/HymnaireLLDM/app/src/main/kotlin/com/jezdevcode/hymnairelldm/JsonManager.kt

@@ -20,6 +20,9 @@ interface HymnDao {
     @Query("SELECT * FROM hymns")
     fun getAll(): Flow<List<Hymn>>
     
+     @Query("SELECT * FROM hymns")
+    suspend fun getAllOnce(): List<Hymn>
+    
     @Delete
     suspend fun delete(hymn: Hymn)
 }

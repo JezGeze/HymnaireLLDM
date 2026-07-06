@@ -251,7 +251,7 @@
         "../../.platform/caches/resolved-deps/androidx/transition/transition/1.5.0/transition-1.5.0-exploded/classes.jar",
         "../../.platform/caches/resolved-deps/androidx/vectordrawable/vectordrawable/1.1.0/vectordrawable-1.1.0-exploded/classes.jar",
         "../../.platform/caches/resolved-deps/androidx/viewpager2/viewpager2/1.0.0/viewpager2-1.0.0-exploded/classes.jar",
-        "../../.platform/caches/resolved-deps/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar",
+        "../../.platform/caches/resolved-deps/com/google/errorprone/error_prone_annotations/2.38.0/error_prone_annotations-2.38.0.jar",
         "../../.platform/caches/resolved-deps/androidx/collection/collection/1.4.2/collection-1.4.2.jar",
         "../../.platform/caches/resolved-deps/androidx/lifecycle/lifecycle-viewmodel/2.6.1/lifecycle-viewmodel-2.6.1-exploded/classes.jar",
         "../../.platform/caches/resolved-deps/androidx/lifecycle/lifecycle-viewmodel-savedstate/2.6.1/lifecycle-viewmodel-savedstate-2.6.1-exploded/classes.jar",
@@ -316,7 +316,7 @@
         "../../.platform/caches/resolved-deps/androidx/transition/transition/1.5.0/transition-1.5.0-sources.jar",
         "../../.platform/caches/resolved-deps/androidx/vectordrawable/vectordrawable/1.1.0/vectordrawable-1.1.0-sources.jar",
         "../../.platform/caches/resolved-deps/androidx/viewpager2/viewpager2/1.0.0/viewpager2-1.0.0-sources.jar",
-        "../../.platform/caches/resolved-deps/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1-sources.jar",
+        "../../.platform/caches/resolved-deps/com/google/errorprone/error_prone_annotations/2.38.0/error_prone_annotations-2.38.0-sources.jar",
         "../../.platform/caches/resolved-deps/androidx/collection/collection/1.4.2/collection-1.4.2-sources.jar",
         "../../.platform/caches/resolved-deps/androidx/lifecycle/lifecycle-viewmodel/2.6.1/lifecycle-viewmodel-2.6.1-sources.jar",
         "../../.platform/caches/resolved-deps/androidx/lifecycle/lifecycle-viewmodel-savedstate/2.6.1/lifecycle-viewmodel-savedstate-2.6.1-sources.jar",
@@ -360,6 +360,16 @@
         "../../.platform/caches/resolved-deps/org/jetbrains/kotlin/kotlin-stdlib-common/1.9.22/kotlin-stdlib-common-1.9.22-sources.jar",
         "../../.platform/caches/resolved-deps/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.9.24/kotlin-stdlib-jdk7-1.9.24-sources.jar",
         "../../.platform/caches/resolved-deps/org/jetbrains/kotlinx/atomicfu-jvm/0.17.0/atomicfu-jvm-0.17.0-sources.jar"
+      ]
+    },
+    {
+      "name": "com.google.code.gson:gson:2.13.1",
+      "kind": "JAR",
+      "classes": [
+        "../../.platform/caches/resolved-deps/com/google/code/gson/gson/2.13.1/gson-2.13.1.jar"
+      ],
+      "sources": [
+        "../../.platform/caches/resolved-deps/com/google/code/gson/gson/2.13.1/gson-2.13.1-sources.jar"
       ]
     },
     {
