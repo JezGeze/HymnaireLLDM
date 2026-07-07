@@ -19,6 +19,7 @@ object JsonManager {
         .use { it.readText() }
         //Al final lo guardarà como texto en la variable jsonString
         
+        //Se crea una objeto de tipo Gson(), este serà nuestro traductor
         val gson = Gson()
         val type = object : TypeToken<List<Hymn>>() {}.type
         val hymns: List<Hymn> = gson.fromJson(jsonString, type)
