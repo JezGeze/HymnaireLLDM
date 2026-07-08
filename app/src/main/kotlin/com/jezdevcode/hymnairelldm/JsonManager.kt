@@ -8,6 +8,7 @@ import com.google.gson.reflect.TypeToken
 object JsonManager {
     
     //Esta función convierte los objetos json a texto (JSON -> String)
+    // Devolverà una List de la clase data class Hymn
     fun loadHymns(context: Context): List<Hymn> {
         //context.assets = Ve a la carpeta assets
         val jsonString = context.assets
@@ -21,6 +22,7 @@ object JsonManager {
         
         //Se crea una objeto de tipo Gson(), este serà nuestro traductor
         val gson = Gson()
+        //TypeToken lo que hace es separar todo
         val type = object : TypeToken<List<Hymn>>() {}.type
         val hymns: List<Hymn> = gson.fromJson(jsonString, type)
         

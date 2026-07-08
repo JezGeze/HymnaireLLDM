@@ -13,8 +13,10 @@ class HymnRepository(private val hymnDao: HymnDao) {
         return hymnDao.getAll()
      }
     
-    
+    /*
     suspend fun saveFavorite(hymn: Hymn){
         hymnDao.insertFavorite(hymn)
     }
+     */
+     
 }

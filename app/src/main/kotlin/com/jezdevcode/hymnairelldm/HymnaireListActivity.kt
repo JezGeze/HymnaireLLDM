@@ -1,10 +1,13 @@
 package com.jezdevcode.hymnairelldm
+
 import android.app.Activity
 import android.os.Bundle
 import android.widget.TextView
+import com.jezdevcode.hymnairelldm.JsonManager
 
 class HymnaireListActivity : Activity(), HymnaireListContract.HLView {
     private lateinit var txtNumber: TextView
+    private lateinit var txtPrueba: TextView
     
     private lateinit var presenterHL: HymnaireListContract.HLPresenter
     
@@ -14,7 +17,11 @@ class HymnaireListActivity : Activity(), HymnaireListContract.HLView {
         
         presenterInit()
         getViews()
-        showTextCantoNumber()
+        //showTextCantoNumber()
+        pruebaJson(
+            
+            
+        )
     }
     
     fun presenterInit(){
@@ -23,6 +30,7 @@ class HymnaireListActivity : Activity(), HymnaireListContract.HLView {
     
     fun getViews(){
         txtNumber = findViewById(R.id.txt_number)
+        txtPrueba = findViewById(R.id.txt_prueba)
     }
     
     override fun showTextCantoNumber(){
@@ -30,5 +38,12 @@ class HymnaireListActivity : Activity(), HymnaireListContract.HLView {
         val title = presenterHL.showCantoTitle()
         val body = presenterHL.showCantoBody()
         txtNumber.setText("$number , $title , $body ")
+    }
+    
+    //Este mètodo es de prueba
+    // pruebaJson() carga del JsonManager la lista de himnos del Json a través de Gson y se lo pasa al texto view
+    fun pruebaJson(){
+        val hymn = JsonManager.loadHymns(this)
+        txtNumber.text = hymn.toString()
     }
 }
