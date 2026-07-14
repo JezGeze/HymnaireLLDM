@@ -1,0 +1,27 @@
+R_DEF: Internal format may change without notice
+local
+color background_principal_menu
+color ic_launcher_background
+color on_primary
+color primary
+color text_color_principal_menu
+dimen general_margin
+drawable ic_hymnaire_24px
+drawable ic_index_24px
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id cv_hymnaire
+id cv_index
+id txt_number
+layout activity_hymnaire_list
+layout activity_principal_menu
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string first_comment
+string hymnaire
+string sommaire
+style AppTheme
+style Base.AppTheme
+xml backup_rules
+xml data_extraction_rules

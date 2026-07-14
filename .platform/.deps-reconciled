@@ -1,7 +1,0 @@
-app|androidx.room:room-compiler:2.7.2
-app|androidx.room:room-ktx:2.7.2
-app|androidx.room:room-runtime:2.7.2
-app|com.google.android.material:material:1.12.0
-app|com.google.code.gson:gson:2.13.1
-app|com.mikhaellopez:circularimageview:4.3.1
-app|kotlin-stdlib

@@ -1,13 +1,13 @@
 package com.jezdevcode.hymnairelldm
 
-import android.app.Activity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import com.jezdevcode.hymnairelldm.JsonManager
 
-class HymnaireListActivity : Activity(), HymnaireListContract.HLView {
+class HymnaireListActivity : AppCompatActivity(), HymnaireListContract.HLView {
     private lateinit var txtNumber: TextView
-    private lateinit var txtPrueba: TextView
+    
     
     private lateinit var presenterHL: HymnaireListContract.HLPresenter
     
@@ -18,10 +18,7 @@ class HymnaireListActivity : Activity(), HymnaireListContract.HLView {
         presenterInit()
         getViews()
         //showTextCantoNumber()
-        pruebaJson(
-            
-            
-        )
+        pruebaJson()
     }
     
     fun presenterInit(){
@@ -30,7 +27,6 @@ class HymnaireListActivity : Activity(), HymnaireListContract.HLView {
     
     fun getViews(){
         txtNumber = findViewById(R.id.txt_number)
-        txtPrueba = findViewById(R.id.txt_prueba)
     }
     
     override fun showTextCantoNumber(){

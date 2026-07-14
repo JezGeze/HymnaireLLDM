@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="Theme.App" parent="android:Theme.Material.NoActionBar">
-        <item name="android:colorPrimary">@color/primary</item>
-    </style>
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <style name="Base.AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+  </style>
+
+  <style name="AppTheme" parent="Base.AppTheme" />
 </resources>
