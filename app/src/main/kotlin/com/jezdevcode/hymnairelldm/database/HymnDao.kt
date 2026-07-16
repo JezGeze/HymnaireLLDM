@@ -32,4 +32,7 @@ interface HymnDao {
     //Se utiliza Flow para que cada vez que se añada o borre informacion se actualize atumoaticamente
     @Query("SELECT * FROM hymns")
     fun getAll(): Flow<List<Hymn>>
+    
+    @Query("SELECT COUNT(*) FROM hymns")
+    suspend fun countHymns(): Int
 }

@@ -4,6 +4,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import com.jezdevcode.hymnairelldm.JsonManager
+import com.jezdevcode.hymnairelldm.database.DatabaseProvider
+import com.jezdevcode.hymnairelldm.database.HymnRepository
+import androidx.lifecycle.lifecycleScope
+import kotlinx.coroutines.launch
 
 class HymnaireListActivity : AppCompatActivity(), HymnaireListContract.HLView {
     private lateinit var txtNumber: TextView
@@ -18,7 +22,8 @@ class HymnaireListActivity : AppCompatActivity(), HymnaireListContract.HLView {
         presenterInit()
         getViews()
         //showTextCantoNumber()
-        pruebaJson()
+        //pruebaJson()
+        pruebaRoom()
     }
     
     fun presenterInit(){
@@ -41,5 +46,18 @@ class HymnaireListActivity : AppCompatActivity(), HymnaireListContract.HLView {
     fun pruebaJson(){
         val hymn = JsonManager.loadHymns(this)
         txtNumber.text = hymn.toString()
+    }
+    
+    fun pruebaRoom(){
+    val db = DatabaseProvider.getDatabase(this)
+
+    val repository = HymnRepository(
+        this,
+        db.hymnDao()
+    )
+
+    lifecycleScope.launch {
+        repository.insertInitialHymns()
+    }
     }
 }
