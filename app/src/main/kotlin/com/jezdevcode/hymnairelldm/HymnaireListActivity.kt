@@ -21,9 +21,10 @@ class HymnaireListActivity : AppCompatActivity(), HymnaireListContract.HLView {
         
         presenterInit()
         getViews()
+        insertInitialHymns()
         //showTextCantoNumber()
         //pruebaJson()
-        pruebaRoom()
+        //pruebaRoom()
     }
     
     fun presenterInit(){
@@ -39,6 +40,10 @@ class HymnaireListActivity : AppCompatActivity(), HymnaireListContract.HLView {
         val title = presenterHL.showCantoTitle()
         val body = presenterHL.showCantoBody()
         txtNumber.setText("$number , $title , $body ")
+    }
+    
+    override fun insertInitialHymns(){
+        presenterHL.getInitialHymns()
     }
     
     //Este mètodo es de prueba
