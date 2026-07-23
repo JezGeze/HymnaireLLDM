@@ -10,7 +10,7 @@ import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
 
 class HymnaireListActivity : AppCompatActivity(), HymnaireListContract.HLView {
-    private lateinit var txtNumber: TextView
+    private lateinit var txtFrenchTitle: TextView
     
     
     private lateinit var presenterHL: HymnaireListContract.HLPresenter
@@ -22,29 +22,31 @@ class HymnaireListActivity : AppCompatActivity(), HymnaireListContract.HLView {
         presenterInit()
         getViews()
         insertInitialHymns()
-        //showTextCantoNumber()
-        //pruebaJson()
-        //pruebaRoom()
+        presenterHL.getAllFrenchTitle()
+        
     }
+    
+    //Start Metodos propios de la activity *********************************************************************************
     
     fun presenterInit(){
         presenterHL = HymnaireListPresenter(this,Cantos(this))
     }
     
     fun getViews(){
-        txtNumber = findViewById(R.id.txt_number)
+        txtFrenchTitle = findViewById(R.id.txt_french_title)
     }
     
-    override fun showTextCantoNumber(){
-        val number = presenterHL.showCantoNumber()
-        val title = presenterHL.showCantoTitle()
-        val body = presenterHL.showCantoBody()
-        txtNumber.setText("$number , $title , $body ")
-    }
+    //Start metodos Room ******************************************************************************************************
     
     override fun insertInitialHymns(){
         presenterHL.getInitialHymns()
     }
+    
+    override fun showFrenchTitles(frenchTitlesList: List<String>){
+        txtFrenchTitle.text = frenchTitlesList.joinToString("\n")
+    }
+    
+    //Metodos de prueba, para borrar ******************************************************************************************
     
     //Este mètodo es de prueba
     // pruebaJson() carga del JsonManager la lista de himnos del Json a través de Gson y se lo pasa al texto view
@@ -53,16 +55,4 @@ class HymnaireListActivity : AppCompatActivity(), HymnaireListContract.HLView {
         txtNumber.text = hymn.toString()
     }
     
-    fun pruebaRoom(){
-    val db = DatabaseProvider.getDatabase(this)
-
-    val repository = HymnRepository(
-        this,
-        db.hymnDao()
-    )
-
-    lifecycleScope.launch {
-        repository.insertInitialHymns()
-    }
-    }
 }

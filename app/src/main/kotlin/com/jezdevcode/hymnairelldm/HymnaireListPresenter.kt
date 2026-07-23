@@ -4,6 +4,7 @@ import com.jezdevcode.hymnairelldm.HymnaireListContract.HLPresenter
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class HymnaireListPresenter (private val viewHL: HymnaireListContract.HLView, private val modelHL: HymnaireListContract.Cantos ) : HymnaireListContract.HLPresenter{
 
@@ -11,21 +12,17 @@ class HymnaireListPresenter (private val viewHL: HymnaireListContract.HLView, pr
         CoroutineScope(Dispatchers.IO).launch {
             modelHL.loadInitialHymns()
         }
-    }    
-    
-    override fun showCantoNumber() : String{
-        val number = modelHL.sendCantoNumber()
-        return number
     }
     
-    override fun showCantoTitle() : String{
-        val title = modelHL.sendCantoTitle()
-        return title
-    }
-    
-    override fun showCantoBody() : String{
-        val body = modelHL.sendCantoBody()
-        return body
+    override fun getAllFrenchTitle() {
+        
+        CoroutineScope(Dispatchers.IO).launch {
+            val frenchTitles = modelHL.getAndSendAllHymnsFrenchsTitles()
+            withContext(Dispatchers.Main){
+                viewHL.showFrenchTitles(frenchTitles)
+            }
+        }
+        
     }
     
 }

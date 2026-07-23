@@ -29,6 +29,9 @@ interface HymnDao {
     @Delete
     suspend fun delete(hymn: Hymn)
     
+    @Query("SELECT hymnFrenchTitle FROM hymns")
+    suspend fun getAllHymnFrenchTitle(): List<String>
+    
     //Se utiliza Flow para que cada vez que se añada o borre informacion se actualize atumoaticamente
     @Query("SELECT * FROM hymns")
     fun getAll(): Flow<List<Hymn>>

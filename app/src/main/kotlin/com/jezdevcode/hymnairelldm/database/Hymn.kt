@@ -17,8 +17,9 @@ data class Hymn(
     val hymnFrenchTitle: String,
     val hymnSpanishTitle: String,
     val hymnTematic: String,
-    val hymnVerse: String,
+    val hymnFirstVerse: String,
     val hymnChorus: String,
+    val hymnVerse: String,
     val favoriteHymn: Boolean = false
     
 )
