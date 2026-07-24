@@ -8,6 +8,7 @@ import com.jezdevcode.hymnairelldm.database.DatabaseProvider
 import com.jezdevcode.hymnairelldm.database.HymnRepository
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
+import androidx.core.text.HtmlCompat
 
 class HymnaireListActivity : AppCompatActivity(), HymnaireListContract.HLView {
     private lateinit var txtFrenchTitle: TextView
@@ -43,7 +44,8 @@ class HymnaireListActivity : AppCompatActivity(), HymnaireListContract.HLView {
     }
     
     override fun showFrenchTitles(frenchTitlesList: List<String>){
-        txtFrenchTitle.text = frenchTitlesList.joinToString("\n")
+        val textToFormater = frenchTitlesList.joinToString("<br>")
+        txtFrenchTitle.text = HtmlCompat.fromHtml(textToFormater, HtmlCompat.FROM_HTML_MODE_LEGACY)
     }
     
     //Metodos de prueba, para borrar ******************************************************************************************
@@ -52,7 +54,7 @@ class HymnaireListActivity : AppCompatActivity(), HymnaireListContract.HLView {
     // pruebaJson() carga del JsonManager la lista de himnos del Json a través de Gson y se lo pasa al texto view
     fun pruebaJson(){
         val hymn = JsonManager.loadHymns(this)
-        txtNumber.text = hymn.toString()
+        txtFrenchTitle.text = hymn.toString()
     }
     
 }

@@ -1,12 +1,32 @@
 [
   {
-    "hymnNumber": 1,
-    "hymnFrenchTitle": "À Dieu soit la Gloire",
-    "hymnSpanishTitle": "",
-    "hymnTematic": "Alabanza",
-    "hymnFirstVerse": "1\nÀ Dieu soit la gloire, par Son grand amour,\nDans mon âme noire, s’est levé le jour.\nJésus, à ma place, mourut sur la croix,\nIl m’offre sa grâce et je la reçois!\n",
-    "hymnChorus": "REFRAIN\nGloire à Dieu! Terre écoute Sa voix!\nGloire à Dieu! Monde réjouis-toi!\nÔ! Venez au Père, Jésus est vainqueur\nQue toute la terre chante en son honneur!\n",
-    "hymnVerse": "2\nParfaite rédemption, Christ a racheté\nPour Dieu par son sang les gens de toute tribu;\nCelui qui de sa bouche confesse Jésus,\nEt qui croit dans son cœur, sera pardonné.\n3\nDe Jésus la joie remplit notre cœur\nQu’importe qu’on voit tout notre bonheur,\nSelon sa promesse Jésus changera\nDeuil en allégresse, quand Il reviendra",
-    "favoriteHymn": false
+  "hymnNumber": 1,
+  "hymnFrenchTitle": "<b>À Dieu soit la Gloire</b>",
+  "hymnSpanishTitle": "",
+  "hymnTematic": "Alabanza",
+  "hymnFirstVerse": "\nA Dieu soit la gloir<b>e</b>, par Son grand amour,\nDans mon âm<b>e</b> noir<b>e</b>, s’est levé le jour.\nJésus, à ma plac<b>e</b>, mourut sur la croix,\nIl m’offr<b>e</b> sa grâc<b>e</b> et je la reçois!",
+  "hymnChorus": "<b>REFRAIN</b>\n//Gloire à Dieu!// Terre écout<b>e</b> Sa voix!\n//Gloire à Dieu!// Mond<b>e</b> r(é)jouis-toi!\nÔ! Venez au Pèr<b>e</b>, Jésus est vainqueur\nQue tout<b>e</b> la terr<b>e</b> chant<u>e en</u> son honneur!",
+  "hymnVerse": "<b>2</b>\nParfait<b>e</b> rédemption, Chris<u>t a</u> racheté\nPour Dieu par son sang les gens de toute tribu;\nCelui qui de sa bouche confess<b>e</b> Jésus,\nEt qui croit dans son cœur, sera pardonné.\n\n<b>3</b>\nDe Jésus la jo<b>ie</b> remplit notre cœur\nQu’import<b>e</b> qu’on v<b>oi</b>t tout notr<b>e</b> bonheur,\nSelon sa promess<b>e</b> Jésus changera\nDe<u>u-il en</u> allégress<b>e</b>, quand Il reviendra",
+  "favoriteHymn": false
+  },
+  {
+  "hymnNumber": 2,
+  "hymnFrenchTitle": "<b>À la bataille</b>",
+  "hymnSpanishTitle": "<b>14: A la Batalla</b>",
+  "hymnTematic": "Foi et victoire",
+  "hymnFirstVerse": "\nÀ la bataill<b>e</b> <u>et à</u> la victoir<b>e</b>,\nAllons avec Dieu notre Roi,\nQu<u>i a</u>vec son bras fort et très robust<b>e</b>,\nDéfend toujours son troupeau.\nAvançons ainsi sans cr<b>ai</b>nt<b>es</b>,\nEnthousiasmés par la foi,\nPendant que nous chantons heureux,\nGloir<b>e</b> à Dieu, notr<b>e</b> Roi.",
+  "hymnChorus": "<b>REFRAIN</b>\nLa victoire n’est pas des plus agil<b>es</b>,\nLa paix n’est pas des plus forts;\nMais des fidèles en Jésus-Christ,\nEst le repos éternel.",
+  "hymnVerse": "<b>2</b>\nÀ la bataill<b>e</b> <u>et à</u> la victoir<b>e</b>,\nQui sera notr<b>e</b> bon Roi?\nQuelles seront les troupes qui défil<b>e</b>ront,\nDans cett<b>e</b> lutt<b>e</b> de foi?\n\nC’est Jésus-Christ le cour<b>a</b>geux,\nLe Seigneur de tout seigneur,\nAccompagné par ceux et celles,\nQui valorisent son amour.\n\n<b>3</b>\nÀ la bataill<b>e</b> <u>et à</u> la victoir<b>e</b>,\nSous un si bon général;\nNous triomph<b>e</b>rons sans aucun délai,\nSur toutes les for<b>ce</b>s du mal.\nRoyaumes et troup<b>es</b> du m<b>o</b>nd<b>e</b>,\nÀ la fin tout cess<b>e</b>ra;\nMais les bien-aimés de J<b>é</b>sus,\nAuront la vie éternelle.",
+  "favoriteHymn": false
+  },
+  {
+  "hymnNumber": 3,
+  "hymnFrenchTitle": "<b>À toi je dirige</b>",
+  "hymnSpanishTitle": "<b>46: A ti dirijo mi voz</b>",
+  "hymnTematic": "",
+  "hymnFirstVerse": "\nÀ toi je dirige ma voix suppliant<b>e</b>,\nMon doux Sauveur, mon soutien,\nTu es le seul pouvant sauver les errants,\nDe leurs tristesses avec bien.",
+  "hymnChorus": "<b>REFRAIN</b>\n//Seigneur//\nMon espérance est en toi,\nMon unique asile se retrouv<b>e</b> en toi, tout mon espoir est en toi",
+  "hymnVerse": "<b>2</b>\nTu connais très bien ma profonde amertume,\nTu vois toute mon oppression;\nJ'ai perdu toute espérance en la créature,\nNul n'a senti ma douleur.\n\n<b>3</b>\nTrès humblement Ô mon Chris<b>t</b>! Je clam<b>e</b>,\nEntend ma voix, Ô Seigneur!\nAvec mon âm<b>e</b> abattue je t'appelle,\nDans ma terribl<b>e</b> douleur.\n\n<b>4</b>\nJe suis très faibl<b>e</b> et le péché puissant,\nDonne-moi Seigneur ton pouvoir,\nTu as libéré mon âm<b>e</b> captiv<b>e</b>,\nNe me laiss<b>e</b> point tomber.\n\n<b>5</b>\nTous les rachetés se réjouissent avec moi,\nCar tu me bénis sans cesse;\nTout<b>es</b> les âm<b>es</b> débord<b>ent</b> de grâc<b>e</b>,\nCar tu les as pardonnées.",
+  "favoriteHymn": false
   }
 ]
