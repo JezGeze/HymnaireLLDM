@@ -7,11 +7,16 @@
      android:orientation="vertical">
 
     <TextView
+         android:id="@+id/txt_french_title"
          android:layout_height="wrap_content"
          android:layout_width="wrap_content"
          android:textSize="40sp"
          android:textColor="@color/text_color_principal_menu"
-         android:id="@+id/txt_french_title"
          android:text="Titre en france" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_french_titles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

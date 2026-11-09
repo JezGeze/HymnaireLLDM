@@ -25,8 +25,7 @@ class Cantos (private val context : Context) : HymnaireListContract.Cantos{
     }
     
     override suspend fun getAndSendAllHymnsFrenchsTitles(): List<String>{
-        val frenchTitles = repository.getAllHymnFrenchTitle()
-        return frenchTitles
+        return repository.getAllHymnFrenchTitle()
     }
   
 }

@@ -9,9 +9,11 @@ import com.jezdevcode.hymnairelldm.database.HymnRepository
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
 import androidx.core.text.HtmlCompat
+import androidx.recyclerview.widget.RecyclerView
 
 class HymnaireListActivity : AppCompatActivity(), HymnaireListContract.HLView {
     private lateinit var txtFrenchTitle: TextView
+    private lateinit var rvFrenchTitles: RecyclerView
     
     
     private lateinit var presenterHL: HymnaireListContract.HLPresenter
@@ -35,6 +37,21 @@ class HymnaireListActivity : AppCompatActivity(), HymnaireListContract.HLView {
     
     fun getViews(){
         txtFrenchTitle = findViewById(R.id.txt_french_title)
+        rvFrenchTitles = findViewById(R.id.rv_french_titles)
+    }
+    
+    fun showHymns(hymns: List<Hymn>){
+        val adapter = HymnAdapter(hymns) { hymn -> openHymn(hymn)}
+        recyclerView.adapter = adapter
+    }
+    
+    private fun openHymn(
+        hymn: Hymn
+    ){
+        val intent(this,HymnDetailActivity::class.java)
+        
+        intent.putExtra("number", hymn.hymnNumber)
+        startActivity(intent)
     }
     
     //Start metodos Room ******************************************************************************************************
