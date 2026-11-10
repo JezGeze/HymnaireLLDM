@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
      xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
      android:layout_height="match_parent"
      android:layout_width="match_parent"
      android:background="@color/background_principal_menu"
      android:orientation="vertical">
 
-    <TextView
-         android:layout_height="wrap_content"
-         android:layout_width="wrap_content"
-         android:textSize="40sp"
-         android:textColor="@color/text_color_principal_menu"
-         android:id="@+id/txt_french_title"
-         android:text="Titre en france" />
+    <androidx.recyclerview.widget.RecyclerView
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         tools:itemCount="3"
+         tools:listitem="@layout/item_rv_hymnaire_list_activity"
+         android:id="@+id/rv_hymnaire_list_titles" />
 
 </LinearLayout>
