@@ -4,9 +4,16 @@ import android.content.Context
 import android.widget.Adapter
 import androidx.recyclerview.widget.RecyclerView
 import android.view.ViewGroup
-class HymnaireListAdapter(private cal context: Context,
+import androidx.cardview.widget.CardView
+import android.view.View
+import android.view.LayoutInflater
+import com.jezdevcode.hymnairelldm.R
+import android.widget.TextView
+import androidx.core.text.HtmlCompat
+
+class HymnaireListAdapter(private val context: Context,
                           private val titles: List<String>
-                         ) : RexyclerView.Adapter<HymnaireListAdapter.HymnaireListViewHolder>() {
+                         ) : RecyclerView.Adapter<HymnaireListAdapter.HymnaireListViewHolder>() {
     
     //Representa una tarjeta individual del RecyclerView                     
     class HymnaireListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
@@ -29,9 +36,12 @@ class HymnaireListAdapter(private cal context: Context,
     override fun onBindViewHolder(holder: HymnaireListViewHolder, position: Int){
         val title = titles[position]
         
-        holder.tvHymnTitle.text = title
+        // En onBindViewHolder del adapter:
+        holder.tvHymnTitle.text = HtmlCompat.fromHtml(titles[position], HtmlCompat.FROM_HTML_MODE_LEGACY)
         
-        holder.cvListItem.setOncClickListener{
+        //holder.tvHymnTitle.text = title
+        
+        holder.cvListItem.setOnClickListener{
         }
     }
     
