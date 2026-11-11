@@ -32,6 +32,10 @@ class HymnRepository(private val context: Context ,private val hymnDao: HymnDao)
         return hymnDao.getAllHymnFrenchTitle()
     }
     
+    suspend fun getAllHymnNumber(): List<String>{
+        return hymnDao.getAllHymnNumber()
+    }
+    
     //también podría quedar asi
     // fun getAllHymns() = hymnDao.getAll()
      fun getAllHymns(): Flow<List<Hymn>>{

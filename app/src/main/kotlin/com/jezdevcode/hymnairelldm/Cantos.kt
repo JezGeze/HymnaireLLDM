@@ -28,5 +28,10 @@ class Cantos (private val context : Context) : HymnaireListContract.Cantos{
         val frenchTitles = repository.getAllHymnFrenchTitle()
         return frenchTitles
     }
+    
+    override suspend fun getAndSendAllHymnsNumbers(): List<String>{
+        val hymnsNumbers = repository.getAllHymnNumber()
+        return hymnsNumbers
+    }
   
 }

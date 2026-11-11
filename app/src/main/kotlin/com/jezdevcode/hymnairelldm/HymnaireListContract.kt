@@ -4,7 +4,7 @@ interface HymnaireListContract {
     
     interface HLView{
         fun insertInitialHymns()
-        fun showFrenchTitles(frenchTitlesList: List<String>)
+        fun showFrenchTitles(hymnNumberList: List<String>, frenchTitlesList: List<String>)
     }
     interface HLPresenter{
         fun getInitialHymns()
@@ -14,5 +14,6 @@ interface HymnaireListContract {
     interface Cantos{
         suspend fun loadInitialHymns()
         suspend fun getAndSendAllHymnsFrenchsTitles(): List<String>
+        suspend fun getAndSendAllHymnsNumbers(): List<String>
     }
 }

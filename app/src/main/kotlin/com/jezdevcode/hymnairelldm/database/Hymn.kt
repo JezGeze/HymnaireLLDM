@@ -12,7 +12,7 @@ import androidx.room.PrimaryKey
 data class Hymn(
     
     @PrimaryKey
-    val hymnNumber: Int,
+    val hymnNumber: String,
     
     val hymnFrenchTitle: String,
     val hymnSpanishTitle: String,

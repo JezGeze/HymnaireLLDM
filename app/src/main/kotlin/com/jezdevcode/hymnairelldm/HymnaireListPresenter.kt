@@ -18,8 +18,9 @@ class HymnaireListPresenter (private val viewHL: HymnaireListContract.HLView, pr
         
         CoroutineScope(Dispatchers.IO).launch {
             val frenchTitles = modelHL.getAndSendAllHymnsFrenchsTitles()
+            val hymnsNumbers = modelHL.getAndSendAllHymnsNumbers()
             withContext(Dispatchers.Main){
-                viewHL.showFrenchTitles(frenchTitles)
+                viewHL.showFrenchTitles(hymnsNumbers,frenchTitles)
             }
         }
         

@@ -12,6 +12,7 @@ import android.widget.TextView
 import androidx.core.text.HtmlCompat
 
 class HymnaireListAdapter(private val context: Context,
+                          private val numbers: List<String>,
                           private val titles: List<String>
                          ) : RecyclerView.Adapter<HymnaireListAdapter.HymnaireListViewHolder>() {
     
@@ -34,10 +35,11 @@ class HymnaireListAdapter(private val context: Context,
     
     //Se ejecuta para colocar los datos dentro de una tarjeta
     override fun onBindViewHolder(holder: HymnaireListViewHolder, position: Int){
-        val title = titles[position]
+        val number = HtmlCompat.fromHtml(numbers[position], HtmlCompat.FROM_HTML_MODE_LEGACY)
+        val title = HtmlCompat.fromHtml(titles[position], HtmlCompat.FROM_HTML_MODE_LEGACY)
         
         // En onBindViewHolder del adapter:
-        holder.tvHymnTitle.text = HtmlCompat.fromHtml(titles[position], HtmlCompat.FROM_HTML_MODE_LEGACY)
+        holder.tvHymnTitle.text = "$number. $title"
         
         //holder.tvHymnTitle.text = title
         

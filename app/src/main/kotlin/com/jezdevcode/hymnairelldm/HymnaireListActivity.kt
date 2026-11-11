@@ -48,14 +48,14 @@ class HymnaireListActivity : AppCompatActivity(), HymnaireListContract.HLView {
         presenterHL.getInitialHymns()
     }
     
-    override fun showFrenchTitles(frenchTitlesList: List<String>){
+    override fun showFrenchTitles(hymnNumberList: List<String>, frenchTitlesList: List<String>){
         //val textToFormater = frenchTitlesList.joinToString("<br>")
         //textFrenchTitle.text = HtmlCompat.fromHtml(textToFormater, HtmlCompat.FROM_HTML_MODE_LEGACY)
-        adaptersInfo(frenchTitlesList)
+        adaptersInfo(hymnNumberList, frenchTitlesList)
     }
     
-    fun adaptersInfo(titlesList: List<String>){
-        val adapter = HymnaireListAdapter(this, titlesList)
+    fun adaptersInfo(hymnNumbersList: List<String>, titlesList: List<String>){
+        val adapter = HymnaireListAdapter(this, hymnNumbersList, titlesList)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = adapter
     }
